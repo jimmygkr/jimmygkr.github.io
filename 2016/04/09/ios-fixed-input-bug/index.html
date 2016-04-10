@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>LLL&#39;s</title>
+  <title>移动端iOS虚拟键盘导致fixed input渲染异常 | LLL&#39;s</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术博客，前端技术，Web技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LLL's">
-<meta property="og:url" content="https://dragonvally.com/index.html">
+  <meta name="description" content="在iOS移动设备下当虚拟键盘打开打开上会导致页面内的Fixed元素出现渲染异常。有几种可以绕过这个bug的方法：为Fixed元素设置 position:absolute; 通过设置定时器focus input元素。
+了解更多-Bootstrap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端iOS虚拟键盘导致fixed input渲染异常">
+<meta property="og:url" content="https://dragonvally.com/2016/04/09/ios-fixed-input-bug/index.html">
 <meta property="og:site_name" content="LLL's">
-<meta property="og:description" content="个人技术博客，前端技术，Web技术">
+<meta property="og:description" content="在iOS移动设备下当虚拟键盘打开打开上会导致页面内的Fixed元素出现渲染异常。有几种可以绕过这个bug的方法：为Fixed元素设置 position:absolute; 通过设置定时器focus input元素。
+了解更多-Bootstrap">
+<meta property="og:updated_time" content="2016-04-10T10:50:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LLL's">
-<meta name="twitter:description" content="个人技术博客，前端技术，Web技术">
+<meta name="twitter:title" content="移动端iOS虚拟键盘导致fixed input渲染异常">
+<meta name="twitter:description" content="在iOS移动设备下当虚拟键盘打开打开上会导致页面内的Fixed元素出现渲染异常。有几种可以绕过这个bug的方法：为Fixed元素设置 position:absolute; 通过设置定时器focus input元素。
+了解更多-Bootstrap">
   
   
     <link rel="icon" href="/favicon.png">
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ios-fixed-input-bug" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ios-fixed-input-bug" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/09/ios-fixed-input-bug/" class="article-date">
   <time datetime="2016-04-09T09:41:03.000Z" itemprop="datePublished">2016-04-09</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/09/ios-fixed-input-bug/">移动端iOS虚拟键盘导致fixed input渲染异常</a>
+    <h1 class="article-title" itemprop="name">
+      移动端iOS虚拟键盘导致fixed input渲染异常
     </h1>
   
 
@@ -100,58 +102,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-spdy" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/03/09/spdy/" class="article-date">
-  <time datetime="2016-03-09T09:41:03.000Z" itemprop="datePublished">2016-03-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/09/spdy/">SPDY为Web加速</a>
-    </h1>
+    <a href="/2016/03/09/spdy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SPDY为Web加速</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>SPDY 是一种旨在为Web加速的协议。SPDY通过改进HTTP和速度相关的几个特性使Web速度得到显著改善。</p>
-<ul>
-<li><p>SPDY允许客户端和服务器压缩请求和响应头，多个请求中相同的头信息（比如：cookies）在多个请求中一遍又一遍的传输，消耗了网络资源。</p>
-</li>
-<li><p>SPDY允许多个请求通过一个网络连接传输，这样就能减少客户端与服务器端的往返延时（RTT：round trip time），同时避免了由于低优先级的资源加载过慢，阻塞其他资源加载，导致高优先级的资源不能及时加载的问题。</p>
-</li>
-<li><p>SPDY允许在客户端发送某些资源前，服务器向客户端主动推送资源（比如：JavaScript,CSS），这样可以让这些资源更早抵达客户端。</p>
-</li>
-</ul>
-<p>了解更多-<a href="https://developers.google.com/speed/spdy/" target="_blank" rel="external">SPDY</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dragonvally.com/2016/03/09/spdy/" data-id="cimugkqu10001jfs66mbph8hi" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器性能优化/">服务器性能优化</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
